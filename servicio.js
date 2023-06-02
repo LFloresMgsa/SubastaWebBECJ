@@ -30,7 +30,7 @@ function ProcesoActualizacionFechasEvento() {
         oEventoDet.Dvd_dFechaModifica= null;
         oEventoDet.Dvd_cUserCrea= "";
         oEventoDet.Dvd_CUserModifica= "";
-
+ 
         connection.query("CALL sp_vtd_evento (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ", [
             oEventoDet.Accion, oEventoDet.Emp_cCodigo, oEventoDet.Pan_cAnio, oEventoDet.Per_cPeriodo,
             oEventoDet.Dvm_cNummov, oEventoDet.Cab_cCatalogo, oEventoDet.Dvd_nOrden, oEventoDet.Dvd_nImporte, oEventoDet.Dvd_cEstado,
